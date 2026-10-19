@@ -1,10 +1,13 @@
-# Matin AI
+# Matin AI — سامانه کشف کافه و رزرو
 
-Persian RTL cafe discovery and reservation platform for WordPress. See the project packages and setup notes in this README.
+قالب وردپرس و افزونه هسته برای کشف کافه‌ها، رویدادها و ثبت درخواست رزرو.
 
-- Theme: `wp-content/themes/matin-ai/`
-- Core plugin: `wp-content/plugins/matin-ai-core/`
-- Reservations stay pending until manually approved; each request receives a private receipt link.
-- Never commit API keys or real customer data.
+- قالب: `wp-content/themes/matin-ai/`
+- افزونه هسته: `wp-content/plugins/matin-ai-core/`
+- رزرو تا زمان بررسی میزبان در وضعیت «در انتظار تأیید» باقی می‌ماند.
+- پس از ثبت درخواست، رسید چاپ‌پذیر با کد پیگیری نمایش داده می‌شود؛ این رسید تا تأیید کافه، بلیت قطعی ورود نیست.
+- کلیدهای API و اطلاعات واقعی مشتریان را در مخزن ثبت نکنید.
 
-See full installation instructions in the updated README packaged with the release ZIPs.
+راهنمای آزمون و محدودیت‌های فعلی: [`docs/QA-AND-RELEASE.md`](docs/QA-AND-RELEASE.md).
+
+**نکته انتشار:** بسته‌های نصب‌پذیر نسخه توسعه 1.1.0 در این گفت‌وگو تولید شده‌اند. پیش از استفاده عملیاتی، فایل‌های منبع بسته‌ها باید در مسیرهای بالا وارد مخزن شوند و آزمون سرتاسری روی وردپرس واقعی انجام شود.
