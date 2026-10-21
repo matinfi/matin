@@ -1,13 +1,27 @@
-# Matin AI — سامانه کشف کافه و رزرو
+# Matin AI — Cafe Discovery & Reservation Platform
 
-قالب وردپرس و افزونه هسته برای کشف کافه‌ها، رویدادها و ثبت درخواست رزرو.
+Matin AI is a WordPress theme and core plugin for discovering cafes, live-music events, football screenings, and making reservations.
 
-- قالب: `wp-content/themes/matin-ai/`
-- افزونه هسته: `wp-content/plugins/matin-ai-core/`
-- رزرو تا زمان بررسی میزبان در وضعیت «در انتظار تأیید» باقی می‌ماند.
-- پس از ثبت درخواست، رسید چاپ‌پذیر با کد پیگیری نمایش داده می‌شود؛ این رسید تا تأیید کافه، بلیت قطعی ورود نیست.
-- کلیدهای API و اطلاعات واقعی مشتریان را در مخزن ثبت نکنید.
+## Release status
 
-راهنمای آزمون و محدودیت‌های فعلی: [`docs/QA-AND-RELEASE.md`](docs/QA-AND-RELEASE.md).
+- Latest locally packaged build: **1.8.0** (theme + core plugin + development bundle).
+- Release notes: [Matin AI 1.8.0](docs/RELEASE-NOTES-fa-1.8.0.md)
+- QA report and known limitations: [QA and release report](docs/QA-AND-RELEASE-fa.md)
 
-**نکته انتشار:** بسته‌های نصب‌پذیر نسخه توسعه 1.1.0 در این گفت‌وگو تولید شده‌اند. پیش از استفاده عملیاتی، فایل‌های منبع بسته‌ها باید در مسیرهای بالا وارد مخزن شوند و آزمون سرتاسری روی وردپرس واقعی انجام شود.
+## 1.8.0 scope
+
+- Turkish-only public-facing theme.
+- Optional browser geolocation, enabled only after visitor permission.
+- Cafe latitude/longitude and discount percentage fields.
+- Discount display on event cards and downloadable event reservation tickets.
+- AI recommendation-count and priority-cafe settings.
+- Concise assistant instructions emphasizing event times, cafe opening hours, and location relevance.
+- Glassmorphism event cards.
+
+## Important release limitations
+
+The 1.8.0 ZIPs were built and syntax-checked in the development workspace. This GitHub repository has historically contained documentation rather than the full source tree; the installable source files are **not yet synced into this repository**. Do not treat the repository itself as a complete deployable release until the theme and plugin source directories are committed.
+
+Cafe opening hours are currently free-text metadata, not a fully structured schedule engine. Independent reservations for cafes without a listed event and complete Persian/Turkish localization of every admin screen remain unfinished. Live WordPress installation and real OpenRouter/Gemini API tests are still required.
+
+Never commit API keys, tokens, or real customer data.
